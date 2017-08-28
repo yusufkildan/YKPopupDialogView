@@ -1,0 +1,6 @@
+framework module Pods_YKPopupDialogView_Tests {
+  umbrella header "Pods-YKPopupDialogView_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

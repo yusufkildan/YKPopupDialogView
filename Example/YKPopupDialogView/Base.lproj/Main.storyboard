@@ -1,25 +1,184 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="c6n-tn-iV9">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--Examples-->
+        <scene sceneID="Siv-8N-gno">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XFK-3Y-VIY" customClass="ViewController" customModule="YKPopupDialogView_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="lXy-ys-4jf"/>
+                        <viewControllerLayoutGuide type="bottom" id="RWm-mJ-J4j"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <view key="view" contentMode="scaleToFill" id="Z76-Tj-3Ho">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Tam-Z6-j6d">
+                                <rect key="frame" x="16" y="80" width="288" height="472"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XqZ-LL-ee6">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="43.5"/>
+                                        <color key="backgroundColor" red="0.57647058819999997" green="0.57254901960000004" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <state key="normal" title="Fade-In / Fade-Out">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="fadeInFadeOutTapped:" destination="XFK-3Y-VIY" eventType="touchUpInside" id="03x-YC-8rA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qf2-38-A3e">
+                                        <rect key="frame" x="0.0" y="47.5" width="288" height="43.5"/>
+                                        <color key="backgroundColor" red="0.57509992600000004" green="0.57064420059999998" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <state key="normal" title="Zoom-In / Zoom-Out">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="zoomInZoomOutTapped:" destination="XFK-3Y-VIY" eventType="touchUpInside" id="7Rn-Ut-tGv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRv-qh-RSN">
+                                        <rect key="frame" x="0.0" y="95" width="288" height="44"/>
+                                        <color key="backgroundColor" red="0.57509992600000004" green="0.57064420059999998" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <state key="normal" title="Slide-Bottom / Slide-Bottom">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="slideBottomBottomTapped:" destination="XFK-3Y-VIY" eventType="touchUpInside" id="nOA-3M-bts"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="boa-r5-6cN">
+                                        <rect key="frame" x="0.0" y="143" width="288" height="43.5"/>
+                                        <color key="backgroundColor" red="0.57509992600000004" green="0.57064420059999998" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <state key="normal" title="Slide-Bottom / Slide-Top">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="slideBottomTopTapped:" destination="XFK-3Y-VIY" eventType="touchUpInside" id="aXX-XM-w58"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Neu-99-2c6">
+                                        <rect key="frame" x="0.0" y="190.5" width="288" height="43.5"/>
+                                        <color key="backgroundColor" red="0.57509992600000004" green="0.57064420059999998" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <state key="normal" title="Slide-Left / Slide-Left">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="slideLeftLeftTapped:" destination="XFK-3Y-VIY" eventType="touchUpInside" id="usQ-BP-zKy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zha-oF-UKY">
+                                        <rect key="frame" x="0.0" y="238" width="288" height="43.5"/>
+                                        <color key="backgroundColor" red="0.57509992600000004" green="0.57064420059999998" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <state key="normal" title="Slide-Left / Slide-Right">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="slideLeftRightTapped:" destination="XFK-3Y-VIY" eventType="touchUpInside" id="p5Z-yf-qhD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KK9-8g-1KU">
+                                        <rect key="frame" x="0.0" y="285.5" width="288" height="43.5"/>
+                                        <color key="backgroundColor" red="0.57509992600000004" green="0.57064420059999998" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <state key="normal" title="Slide-Top / Slide-Top">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="slideTopTopTapped:" destination="XFK-3Y-VIY" eventType="touchUpInside" id="nXv-Iy-z6u"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qWs-Bk-ps3">
+                                        <rect key="frame" x="0.0" y="333" width="288" height="44"/>
+                                        <color key="backgroundColor" red="0.57509992600000004" green="0.57064420059999998" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <state key="normal" title="Slide-Top / Slide-Bottom">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="slideTopBottomTapped:" destination="XFK-3Y-VIY" eventType="touchUpInside" id="1tr-FN-xcF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yff-7q-EhH">
+                                        <rect key="frame" x="0.0" y="381" width="288" height="43.5"/>
+                                        <color key="backgroundColor" red="0.57509992600000004" green="0.57064420059999998" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <state key="normal" title="Slide-Right / Slide-Right">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="slideRightRightTapped:" destination="XFK-3Y-VIY" eventType="touchUpInside" id="JdG-Gn-gaF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XhD-VQ-Ibz">
+                                        <rect key="frame" x="0.0" y="428.5" width="288" height="43.5"/>
+                                        <color key="backgroundColor" red="0.57509992600000004" green="0.57064420059999998" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <state key="normal" title="Slide-Right / Slide-Left">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="slideRightLeftTapped:" destination="XFK-3Y-VIY" eventType="touchUpInside" id="qNb-5t-odX"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Tam-Z6-j6d" firstAttribute="leading" secondItem="Z76-Tj-3Ho" secondAttribute="leading" constant="16" id="9eI-7S-lZs"/>
+                            <constraint firstItem="Tam-Z6-j6d" firstAttribute="top" secondItem="lXy-ys-4jf" secondAttribute="bottom" constant="16" id="Ibf-GN-nSe"/>
+                            <constraint firstAttribute="trailing" secondItem="Tam-Z6-j6d" secondAttribute="trailing" constant="16" id="gdD-ag-KNL"/>
+                            <constraint firstItem="RWm-mJ-J4j" firstAttribute="top" secondItem="Tam-Z6-j6d" secondAttribute="bottom" constant="16" id="vsB-LU-Hdv"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Examples" id="iQ7-D3-u7N">
+                        <barButtonItem key="leftBarButtonItem" title="Default" id="WA9-qz-9Ub">
+                            <connections>
+                                <action selector="showDefaultPopup:" destination="XFK-3Y-VIY" id="DcZ-aO-pbv"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Customized" id="r0D-NL-gBO">
+                            <connections>
+                                <action selector="showCustomizedPopup:" destination="XFK-3Y-VIY" id="B8c-ra-Wub"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DOw-H7-bI7" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2006" y="-546"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rJc-tb-zCn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="c6n-tn-iV9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3w8-Gg-ej9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="XFK-3Y-VIY" kind="relationship" relationship="rootViewController" id="s1L-6P-VSg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8d1-nI-Lyo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1218.4000000000001" y="-545.57721139430294"/>
         </scene>
     </scenes>
 </document>

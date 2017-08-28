@@ -35,5 +35,25 @@
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Kanit-Black.ttf</string>
+		<string>Kanit-BlackItalic.ttf</string>
+		<string>Kanit-Bold.ttf</string>
+		<string>Kanit-BoldItalic.ttf</string>
+		<string>Kanit-ExtraBold.ttf</string>
+		<string>Kanit-ExtraLight.ttf</string>
+		<string>Kanit-Italic.ttff</string>
+		<string>Kanit-ExtraLightItalic.ttf</string>
+		<string>Kanit-Light.ttf</string>
+		<string>Kanit-LightItalic.ttf</string>
+		<string>Kanit-Medium.ttf</string>
+		<string>Kanit-MediumItalic.ttf</string>
+		<string>Kanit-Regular.ttf</string>
+		<string>Kanit-SemiBold.ttf</string>
+		<string>Kanit-SemiBoldItalic.ttf</string>
+		<string>Kanit-Thin.ttf</string>
+		<string>Kanit-ThinItalic.ttf</string>
+	</array>
 </dict>
 </plist>

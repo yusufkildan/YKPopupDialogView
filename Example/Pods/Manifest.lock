@@ -1,0 +1,16 @@
+PODS:
+  - YKPopupDialogView (0.1.0)
+
+DEPENDENCIES:
+  - YKPopupDialogView (from `../`)
+
+EXTERNAL SOURCES:
+  YKPopupDialogView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  YKPopupDialogView: 6f5193ba09a6060ec4125438dc5d1ff7b152b9ef
+
+PODFILE CHECKSUM: 3c1a5c86ee8c920b1121c44de8f7ea1f397a51e0
+
+COCOAPODS: 1.2.0
