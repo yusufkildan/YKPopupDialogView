@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'YKPopupDialogView_Example' do
+  pod 'YKPopupDialogView', :path => '../'
+
+  target 'YKPopupDialogView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
