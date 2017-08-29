@@ -3,6 +3,9 @@ YKPopupDialogView
 <a href="https://developer.apple.com/swift"><img src="https://img.shields.io/badge/language-swift3-f48041.svg?style=flat"></a>
 <a href="https://developer.apple.com/ios"><img src="https://img.shields.io/badge/platform-iOS%2010%2B-blue.svg?style=flat"></a>
 [![Pod License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/yusufkildan/YKPopupDialogView/master/LICENSE)
+<a href="https://cocoapods.org/?q=YKPOP"><img src="https://img.shields.io/badge/cocoapods-compatible-brightgreen.svg"></a>
+<a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/carthage-working%20on-red.svg"></a>
+
 
 ## Preview
 
