@@ -8,9 +8,9 @@ YKPopupDialogView
 
 ## Preview
 
-<img src="Screenshots/examples.gif" width="300">
-![demo](Screenshots/image1.jpg)
-![demo](Screenshots/image2.jpg)
+![demo1](Screenshots/image1.jpg)
+![demo2](Screenshots/image2.jpg)
+![demo3](Screenshots/examples.gif)
 
 ## Installation
 
