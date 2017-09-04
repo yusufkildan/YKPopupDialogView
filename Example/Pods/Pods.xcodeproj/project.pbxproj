@@ -9,14 +9,15 @@
 /* Begin PBXBuildFile section */
 		0F9F73240654DB2DE3925C56F5EB1222 /* Pods-YKPopupDialogView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BF676DA42216052B95C47EE6B3BF373 /* Pods-YKPopupDialogView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		26C7BC7CD6EA006223A2B9CBCC1FF542 /* Pods-YKPopupDialogView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D16A7CBB68A8187DD9EF8BF3F7E7BEB /* Pods-YKPopupDialogView_Tests-dummy.m */; };
-		28AAF1639DCC54EB53C7BC717789DAAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		28AAF1639DCC54EB53C7BC717789DAAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		4BD90BEE05671FA1A237C58D8E1C9701 /* YKPopupDialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5144A1696E4EA668D61E1F8EC68F957 /* YKPopupDialogView.swift */; };
+		671EA9D6EB2AC5AAB24130E60519C7B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		924479E8869A53550127C69C707C194E /* Pods-YKPopupDialogView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B06403C26393902F0ED9DD57804B80FC /* Pods-YKPopupDialogView_Example-dummy.m */; };
 		99DA9E3961D0B5A13A90BC841AE6BD8F /* YKPopupDialogView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 30764E3B2DB2A7C4141F3FCBE37EB153 /* YKPopupDialogView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B0FA1688CDB656733CBC8B7610222382 /* Pods-YKPopupDialogView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 858C31CF7A68DECE903A09DFC8652ED6 /* Pods-YKPopupDialogView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EDC099834603B7753EB9A9F808BE4ED8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		CB945E58950B8D12F3FA0334F3B2CB92 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
 		FC5E442F1CFF62B5C24B871F92C8E4F2 /* YKPopupDialogView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C37FA23C43ED64A41463870171876E /* YKPopupDialogView-dummy.m */; };
-		FF1DDF353C0DE7D80DC7E5B93C5D1B66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		FF1DDF353C0DE7D80DC7E5B93C5D1B66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +46,6 @@
 		5E4B811D0ED3F3218DA458B9773B6DA0 /* Pods-YKPopupDialogView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YKPopupDialogView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5EA788E3E714C0A37FBC3A1AA35B04CF /* Pods-YKPopupDialogView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-YKPopupDialogView_Example.modulemap"; sourceTree = "<group>"; };
 		5F778F037FE4AFB8AF2FEC1CE544B534 /* YKPopupDialogView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YKPopupDialogView.framework; path = YKPopupDialogView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7CC40F2D715450F3935008A577BDACD4 /* Pods_YKPopupDialogView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YKPopupDialogView_Example.framework; path = "Pods-YKPopupDialogView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		858C31CF7A68DECE903A09DFC8652ED6 /* Pods-YKPopupDialogView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YKPopupDialogView_Example-umbrella.h"; sourceTree = "<group>"; };
 		8A713000B21BFD725FB579D66BD82774 /* Pods_YKPopupDialogView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YKPopupDialogView_Tests.framework; path = "Pods-YKPopupDialogView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,10 +55,12 @@
 		985F1086FA661A30CAEBC61102AD3738 /* Pods-YKPopupDialogView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YKPopupDialogView_Example-resources.sh"; sourceTree = "<group>"; };
 		AE49ECA60F470A565EE9C0BF19AC9C51 /* Pods-YKPopupDialogView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YKPopupDialogView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B06403C26393902F0ED9DD57804B80FC /* Pods-YKPopupDialogView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YKPopupDialogView_Example-dummy.m"; sourceTree = "<group>"; };
+		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		B81F25FC35BE677F503C98D0E55D4BAC /* Pods-YKPopupDialogView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YKPopupDialogView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		BC8829709232FC53CC6242F9D71F3F34 /* Pods-YKPopupDialogView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YKPopupDialogView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BEC09A22E4E3A479D26ADE6B629DA31E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5144A1696E4EA668D61E1F8EC68F957 /* YKPopupDialogView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YKPopupDialogView.swift; sourceTree = "<group>"; };
+		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		E44891BE3204236FB62D16EDA44F9EBB /* YKPopupDialogView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YKPopupDialogView.xcconfig; sourceTree = "<group>"; };
 		EDDA9865A1B60B117498FB6B7885026D /* Pods-YKPopupDialogView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YKPopupDialogView_Tests-resources.sh"; sourceTree = "<group>"; };
 		EFD0030DAEABA43BF073AB481EB2C9C8 /* Pods-YKPopupDialogView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-YKPopupDialogView_Tests.modulemap"; sourceTree = "<group>"; };
@@ -73,11 +75,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1FAE4219C6F8F94002146B1584CEB5A5 /* Frameworks */ = {
+		127A2148E825C5E18AA24915FABD5350 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDC099834603B7753EB9A9F808BE4ED8 /* Foundation.framework in Frameworks */,
+				671EA9D6EB2AC5AAB24130E60519C7B6 /* Foundation.framework in Frameworks */,
+				CB945E58950B8D12F3FA0334F3B2CB92 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +145,23 @@
 			path = "Target Support Files/Pods-YKPopupDialogView_Example";
 			sourceTree = "<group>";
 		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				438B396F6B4147076630CAEFE34282C1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
+				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		4AB8C2D86F58D4AF8E5FA075E28BCA1B /* YKPopupDialogView */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,7 +195,7 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				91757648EEB867DBCE969375535AA1DB /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
 				FDEE2108314F7F37CFE02F426F41EB0D /* Products */,
 				8D8CEFEB0E18B1D991427DB0E3DAE1BC /* Targets Support Files */,
 			);
@@ -196,22 +216,6 @@
 				4AB8C2D86F58D4AF8E5FA075E28BCA1B /* YKPopupDialogView */,
 			);
 			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		FDEE2108314F7F37CFE02F426F41EB0D /* Products */ = {
@@ -294,7 +298,7 @@
 			buildConfigurationList = 681A13E0C5D846C5C46DDB9C055EED9E /* Build configuration list for PBXNativeTarget "YKPopupDialogView" */;
 			buildPhases = (
 				97229C90C466ECD3C8D6D64C67FE75E4 /* Sources */,
-				1FAE4219C6F8F94002146B1584CEB5A5 /* Frameworks */,
+				127A2148E825C5E18AA24915FABD5350 /* Frameworks */,
 				D5EAE56ABD21C6FC14736E1A5D8D6D2A /* Headers */,
 			);
 			buildRules = (
@@ -372,41 +376,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		114759AF4F51371270B3664D7DEB8692 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E44891BE3204236FB62D16EDA44F9EBB /* YKPopupDialogView.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/YKPopupDialogView/YKPopupDialogView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/YKPopupDialogView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/YKPopupDialogView/YKPopupDialogView.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = YKPopupDialogView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		643C76AA582046977B7877822ED7A258 /* Debug */ = {
+		4E487F173E6C9664F4E9E26B9635D23C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -446,7 +416,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -454,9 +424,9 @@
 			};
 			name = Debug;
 		};
-		76F9B5B70F45C3E454428309BEABD6C5 /* Release */ = {
+		62CFD3369D3CA3BF950E99D8B2F1E005 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E4B811D0ED3F3218DA458B9773B6DA0 /* Pods-YKPopupDialogView_Tests.release.xcconfig */;
+			baseConfigurationReference = E44891BE3204236FB62D16EDA44F9EBB /* YKPopupDialogView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -470,27 +440,25 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-YKPopupDialogView_Tests/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/YKPopupDialogView/YKPopupDialogView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YKPopupDialogView/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-YKPopupDialogView_Tests/Pods-YKPopupDialogView_Tests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/YKPopupDialogView/YKPopupDialogView.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_YKPopupDialogView_Tests;
+				PRODUCT_NAME = YKPopupDialogView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		829416ED3B08ADC40B127F388624A93C /* Debug */ = {
+		812D4140251009D3AF76EB3A440FF005 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BC8829709232FC53CC6242F9D71F3F34 /* Pods-YKPopupDialogView_Example.debug.xcconfig */;
 			buildSettings = {
@@ -508,7 +476,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-YKPopupDialogView_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-YKPopupDialogView_Example/Pods-YKPopupDialogView_Example.modulemap";
@@ -529,7 +497,79 @@
 			};
 			name = Debug;
 		};
-		89C7B338F0497290D90F6B4EA2358629 /* Debug */ = {
+		8E70C6A785ECC91B2D69EA4189A7A022 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E4B811D0ED3F3218DA458B9773B6DA0 /* Pods-YKPopupDialogView_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-YKPopupDialogView_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YKPopupDialogView_Tests/Pods-YKPopupDialogView_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_YKPopupDialogView_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A4CF419982E8F1B005CBE986AA3B8FD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BF21B5D4FEB8D61C54D2BEC916B84D9 /* Pods-YKPopupDialogView_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-YKPopupDialogView_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YKPopupDialogView_Tests/Pods-YKPopupDialogView_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_YKPopupDialogView_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AD5E8C97884907963287AA6BA5D4AF72 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E44891BE3204236FB62D16EDA44F9EBB /* YKPopupDialogView.xcconfig */;
 			buildSettings = {
@@ -548,7 +588,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/YKPopupDialogView/YKPopupDialogView-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/YKPopupDialogView/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/YKPopupDialogView/YKPopupDialogView.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -564,7 +604,7 @@
 			};
 			name = Debug;
 		};
-		9B2BCAF36BB30E7BE527248C936CC2A2 /* Release */ = {
+		B0DB52371E6B1E843C18517F99AB24C8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B81F25FC35BE677F503C98D0E55D4BAC /* Pods-YKPopupDialogView_Example.release.xcconfig */;
 			buildSettings = {
@@ -582,7 +622,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-YKPopupDialogView_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-YKPopupDialogView_Example/Pods-YKPopupDialogView_Example.modulemap";
@@ -602,43 +642,7 @@
 			};
 			name = Release;
 		};
-		A715AB5FEFD9BCE67FF3C05BEC22BE0F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5BF21B5D4FEB8D61C54D2BEC916B84D9 /* Pods-YKPopupDialogView_Tests.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-YKPopupDialogView_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-YKPopupDialogView_Tests/Pods-YKPopupDialogView_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_YKPopupDialogView_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C03B8870130C98D1B02B59D003687524 /* Release */ = {
+		BDD0139D6EB93FA375F887ABD62DAB2E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -674,7 +678,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
@@ -688,8 +692,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				643C76AA582046977B7877822ED7A258 /* Debug */,
-				C03B8870130C98D1B02B59D003687524 /* Release */,
+				4E487F173E6C9664F4E9E26B9635D23C /* Debug */,
+				BDD0139D6EB93FA375F887ABD62DAB2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -697,8 +701,8 @@
 		681A13E0C5D846C5C46DDB9C055EED9E /* Build configuration list for PBXNativeTarget "YKPopupDialogView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				89C7B338F0497290D90F6B4EA2358629 /* Debug */,
-				114759AF4F51371270B3664D7DEB8692 /* Release */,
+				AD5E8C97884907963287AA6BA5D4AF72 /* Debug */,
+				62CFD3369D3CA3BF950E99D8B2F1E005 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -706,8 +710,8 @@
 		7C9845D014A9520C2A154404D7C74D5B /* Build configuration list for PBXNativeTarget "Pods-YKPopupDialogView_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				829416ED3B08ADC40B127F388624A93C /* Debug */,
-				9B2BCAF36BB30E7BE527248C936CC2A2 /* Release */,
+				812D4140251009D3AF76EB3A440FF005 /* Debug */,
+				B0DB52371E6B1E843C18517F99AB24C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -715,8 +719,8 @@
 		ABFB94F202C83116B28AA339E7401253 /* Build configuration list for PBXNativeTarget "Pods-YKPopupDialogView_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A715AB5FEFD9BCE67FF3C05BEC22BE0F /* Debug */,
-				76F9B5B70F45C3E454428309BEABD6C5 /* Release */,
+				A4CF419982E8F1B005CBE986AA3B8FD0 /* Debug */,
+				8E70C6A785ECC91B2D69EA4189A7A022 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
