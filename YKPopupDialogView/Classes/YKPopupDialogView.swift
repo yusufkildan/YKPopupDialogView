@@ -162,6 +162,14 @@ public class YKPopupDialogView: UIView {
     
     // MARK: - Constructors
     
+    convenience init(buttonAlignment: YKPopupDialogButtonAlignment) {
+        self.init(frame:CGRect.zero)
+        
+        self.buttonAlignment = buttonAlignment
+        
+        commonInit()
+    }
+    
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
@@ -222,7 +230,15 @@ public class YKPopupDialogView: UIView {
         
         let appDelegate = UIApplication.shared.delegate
         
-        let parentViewController = appDelegate?.window??.rootViewController
+        var parentViewController = appDelegate?.window??.rootViewController
+        
+        var modalViewController = parentViewController?.presentedViewController
+        
+        while modalViewController != nil {
+            parentViewController = modalViewController
+            
+            modalViewController = parentViewController?.presentedViewController
+        }
         
         parentViewController?.view.addSubview(self)
         
@@ -284,11 +300,13 @@ public class YKPopupDialogView: UIView {
         popupView.frame = popupViewStartRect
         popupView.alpha = 1.0
         
-        UIView.animate(withDuration: animationDuration, delay: 0.0, options: UIViewAnimationOptions.curveEaseInOut, animations: {
+        UIView.animate(withDuration: animationDuration, animations: { () -> Void in
             self.overlayView.alpha = 1.0
             
             self.popupView.frame = popupViewEndRect
-        }, completion: nil)
+        }, completion: { (finished) -> Void in
+            
+        })
     }
     
     fileprivate func zoomInAnimation() {
@@ -301,11 +319,13 @@ public class YKPopupDialogView: UIView {
         popupView.transform = CGAffineTransform(scaleX: 0.01, y: 0.01)
         popupView.alpha = 0.0
         
-        UIView.animate(withDuration: animationDuration, delay: 0.0, options: UIViewAnimationOptions.curveEaseInOut, animations: { () -> Void in
+        UIView.animate(withDuration: animationDuration, delay: 0.0, options: UIViewAnimationOptions.curveEaseIn, animations: { () -> Void in
             self.overlayView.alpha = 1.0
             self.popupView.transform = CGAffineTransform.identity
             self.popupView.alpha = 1.0
-        }, completion: nil)
+        }) { (finished) -> Void in
+            
+        }
     }
     
     fileprivate func fadeInAnimation() {
@@ -319,11 +339,13 @@ public class YKPopupDialogView: UIView {
         popupView.transform = CGAffineTransform(scaleX: 1.05, y: 1.05)
         popupView.alpha = 0.0
         
-        UIView.animate(withDuration: animationDuration, delay: 0.0, options: UIViewAnimationOptions.curveEaseInOut, animations: { () -> Void in
+        UIView.animate(withDuration: animationDuration, animations: { () -> Void in
             self.overlayView.alpha = 1.0
             self.popupView.transform = CGAffineTransform.identity
             self.popupView.alpha = 1.0
-        }, completion: nil)
+        }, completion: { (finished) -> Void in
+            
+        })
     }
     
     // MARK: - Hide
@@ -362,21 +384,25 @@ public class YKPopupDialogView: UIView {
             popupViewEndRect = CGRect(x: -popupViewSize.width, y: self.popupView.frame.origin.y, width: popupViewSize.width, height: popupViewSize.height)
         }
         
-        UIView.animate(withDuration: self.animationDuration, delay: 0.0, options: UIViewAnimationOptions.curveEaseInOut, animations: { () -> Void in
+        UIView.animate(withDuration: self.animationDuration, delay: 0.0, options: UIViewAnimationOptions.curveEaseIn, animations: { () -> Void in
             
             self.popupView.frame = popupViewEndRect
-            self.overlayView.alpha = 0.0
             
         }) { (finished) -> Void in
-            self.overlayView.isHidden = true
-            self.popupView.isHidden = true
-            
-            self.removeFromSuperview()
+            UIView.animate(withDuration: 0.2, delay: 0.0, options: UIViewAnimationOptions.curveEaseIn, animations: { () -> Void in
+                self.overlayView.alpha = 0.0
+                self.popupView.alpha = 0.0
+            }) { (finished) -> Void in
+                self.overlayView.isHidden = true
+                self.popupView.isHidden = true
+                
+                self.removeFromSuperview()
+            }
         }
     }
     
     fileprivate func zoomOutAnimation() {
-        UIView.animate(withDuration: animationDuration, delay: 0.0, options: UIViewAnimationOptions.curveEaseInOut, animations: { () -> Void in
+        UIView.animate(withDuration: animationDuration, delay: 0.0, options: UIViewAnimationOptions.curveEaseIn, animations: { () -> Void in
             self.overlayView.alpha = 0.0
             self.popupView.transform = CGAffineTransform(scaleX: 0.01, y: 0.01)
             self.popupView.alpha = 0.0
@@ -389,16 +415,16 @@ public class YKPopupDialogView: UIView {
     }
     
     fileprivate func fadeOutAnimation() {
-        UIView.animate(withDuration: animationDuration, delay: 0.0, options: UIViewAnimationOptions.curveEaseInOut, animations: { () -> Void in
+        UIView.animate(withDuration: animationDuration, animations: { () -> Void in
             self.overlayView.alpha = 0.0
             self.popupView.transform = CGAffineTransform(scaleX: 0.95, y: 0.95)
             self.popupView.alpha = 0.0
-        }) { (finished) -> Void in
+        }, completion: { (finished) -> Void in
             self.overlayView.isHidden = true
             self.popupView.isHidden = true
             
             self.removeFromSuperview()
-        }
+        })
     }
     
     // MARK: - Create UI
